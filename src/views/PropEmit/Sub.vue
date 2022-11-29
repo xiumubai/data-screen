@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import { inject, Ref, ref } from "vue";
-
+import { inject, ref } from "vue";
+import type { Ref } from "vue";
 const sex = inject<Ref<string>>("sex", ref("女"));
 
 const handleChangeSex = () => {
