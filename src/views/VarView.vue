@@ -11,7 +11,6 @@ const handleChangeBgColor = () => {};
     <!-- 声明成计算属性 -->
     <div :style="declareColor" class="bg-color"></div>
     <input type="text" placeholder="输入颜色值" v-model="bgColor" />
-    <button @click="handleChangeBgColor">切换背景颜色</button>
   </div>
 </template>
 <style>
