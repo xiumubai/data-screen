@@ -5,6 +5,7 @@ import ReactiveView from "../views/ReactiveView.vue";
 import WatchView from "../views/WatchView.vue";
 import PropView from "../views/PropEmit/Parent.vue";
 import SlotView from "../views/SlotView/Parent.vue";
+import VarView from "../views/VarView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: "/slot",
       name: "slot",
       component: SlotView,
+    },
+    {
+      path: "/var",
+      name: "var",
+      component: VarView,
     },
   ],
 });

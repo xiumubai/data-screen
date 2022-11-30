@@ -11,6 +11,7 @@ import { RouterLink, RouterView } from "vue-router";
       <RouterLink to="/reactive">Reactive</RouterLink>
       <RouterLink to="/props">Props</RouterLink>
       <RouterLink to="/slot">Slot</RouterLink>
+      <RouterLink to="/var">Var函数的使用</RouterLink>
     </nav>
   </header>
 
