@@ -2,7 +2,6 @@
 import { ref, computed } from "vue";
 const bgColor = ref("blue");
 const declareColor = computed(() => `--bg-color: ${bgColor.value}`);
-const handleChangeBgColor = () => {};
 </script>
 
 <template>
