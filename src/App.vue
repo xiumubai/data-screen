@@ -12,6 +12,7 @@ import { RouterLink, RouterView } from "vue-router";
       <RouterLink to="/props">Props</RouterLink>
       <RouterLink to="/slot">Slot</RouterLink>
       <RouterLink to="/var">Var函数的使用</RouterLink>
+      <RouterLink to="/todo">Todo List</RouterLink>
     </nav>
   </header>
 

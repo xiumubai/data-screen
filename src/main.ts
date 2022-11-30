@@ -11,4 +11,10 @@ const app = createApp(App);
 app.use(createPinia());
 app.use(router);
 
+app.directive("focus", (el, binding) => {
+  console.log(el, binding);
+  if (binding.value) {
+    el.focus();
+  }
+});
 app.mount("#app");

@@ -6,6 +6,7 @@ import WatchView from "../views/WatchView.vue";
 import PropView from "../views/PropEmit/Parent.vue";
 import SlotView from "../views/SlotView/Parent.vue";
 import VarView from "../views/VarView.vue";
+import TodoView from "../views/TodoView/index.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,11 @@ const router = createRouter({
       path: "/var",
       name: "var",
       component: VarView,
+    },
+    {
+      path: "/todo",
+      name: "Todo",
+      component: TodoView,
     },
   ],
 });
