@@ -117,14 +117,14 @@ const saveTodoList = (todos: ITodoItem[]) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
 };
 
-const filters = {
-  all(todos: ITodoItem[]) {
+const filters: any = {
+  all(todos: ITodoItem[]): ITodoItem[] {
     return todos;
   },
-  active(todos: ITodoItem[]) {
+  active(todos: ITodoItem[]): ITodoItem[] {
     return todos.filter((todo: ITodoItem) => !todo.completed);
   },
-  completed(todos: ITodoItem[]) {
+  completed(todos: ITodoItem[]): ITodoItem[] {
     return todos.filter((todo: ITodoItem) => todo.completed);
   },
 };
