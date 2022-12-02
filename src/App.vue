@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-</script>
+
 
 <template>
   <header>
@@ -13,12 +11,25 @@ import { RouterLink, RouterView } from "vue-router";
       <RouterLink to="/slot">Slot</RouterLink>
       <RouterLink to="/var">Var函数的使用</RouterLink>
       <RouterLink to="/todo">Todo List</RouterLink>
+
+      <div class="change-theme">
+        <button @click="handleChangeTheme">切换主题</button>
+      </div>
     </nav>
   </header>
 
   <RouterView />
 </template>
-
+<script setup lang="ts">
+import { RouterLink, RouterView } from "vue-router";
+const handleChangeTheme = () => {
+  if (!document.body.className) {
+    document.body.className = "dark";
+  } else {
+    document.body.className = "";
+  }
+};
+</script>
 <style scoped>
 header {
   line-height: 1.5;
